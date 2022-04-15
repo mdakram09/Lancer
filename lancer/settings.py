@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'userform.apps.UserformConfig'
+    'userform.apps.UserformConfig',
+    'workforusform.apps.WorkforusformConfig'
 ]
 
 MIDDLEWARE = [

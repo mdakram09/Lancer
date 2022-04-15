@@ -26,3 +26,27 @@ def index(request):
     return render(request, 'index.html')
 
 
+
+
+
+from workforusform.models import Workforusform
+
+def workforusform(request):
+    if request.method=="POST":
+        name=request.POST['name']
+        phone=request.POST['phone']
+        email=request.POST['email']
+        paddress=request.POST['paddress']
+        pan=request.POST['pan']
+        date=request.POST['date']
+        experience =request.POST['experience']
+        if len(name)<2 or len(email)<3 or len(phone)<10:
+            messages.error(request, "Please fill the form correctly")
+        else:
+            workforusform=Workforusform(name=name,phone=phone, email=email,paddress=paddress,pan=pan,date=date,  experience=experience)
+            workforusform.save()
+            messages.success(request, "Your message has been successfully sent")
+        workforusform=Workforusform(name=name,phone=phone, email=email,paddress=paddress,pan=pan,date=date,  experience=experience)
+        workforusform.save()
+    return render(request, "workWithUs.html")
+

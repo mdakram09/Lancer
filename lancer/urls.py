@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('workforusform', views.workforusform, name='workforusform'),
     # path('about',views.about, name='about'),
 ]
