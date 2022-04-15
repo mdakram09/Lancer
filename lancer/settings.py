@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,6 +26,11 @@ SECRET_KEY = 'fov1^b$*v0e9(rx$8t05xjucz3r=&+dc9a7bnp6p!d6y5tzji9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+MESSAGE_TAGS = {
+    messages.ERROR:'danger'
+}
+
 
 ALLOWED_HOSTS = []
 STATIC_URL = '/static/'
