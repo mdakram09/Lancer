@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="aboutUs.html">ABOUT US</a></li>
+                        <li><a href="workWithUs.html">WORK WITH US</a></li>
+                        <li><a href="">BUY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Register On Lancer & Work As A Professional</h1>
+        </section>
+        <!----------blog page content---------->
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/home3.jpg">
+                    <h2>Guidelines & Steps To Register As A Professional On Lancer</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eos iusto adipisci quibusdam vitae! Repudiandae ullam fugit
+                    temporibus nesciunt optio laboriosam delectus voluptatem aperiam 
+                    praesentium, voluptatum pariatur omnis, commodi expedita doloribus!
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eos iusto adipisci quibusdam vitae! Repudiandae ullam fugit
+                    temporibus nesciunt optio laboriosam delectus voluptatem aperiam 
+                    praesentium, voluptatum pariatur omnis, commodi expedita doloribus!
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eos iusto adipisci quibusdam vitae! Repudiandae ullam fugit
+                    temporibus nesciunt optio laboriosam delectus voluptatem aperiam 
+                    praesentium, voluptatum pariatur omnis, commodi expedita doloribus!
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eos iusto adipisci quibusdam vitae! Repudiandae ullam fugit
+                    temporibus nesciunt optio laboriosam delectus voluptatem aperiam 
+                    praesentium, voluptatum pariatur omnis, commodi expedita doloribus!
+                    </p>
+                    <div class="comment-box">
+                        <h3>Fill The Form And Procede For Your Further Inquiry</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="text" placeholder="Enter Phone">
+                            <input type="email" placeholder="Enter email">
+                            Select Profession :
+                            <select>
+                                <option>Civil Work</option>
+                                <option>Electrician</option>
+                                <option>Plumber</option>
+                                <option>Carpenter</option>
+                                <option>Painter</option>
+                                <option>Iron Work</option>
+                                <option>Glazing</option>
+                                <option>Tile Work</option>
+                            </select>
+                            <input type="address" placeholder="Enter Your Permanent address">
+                            <input type="text" placeholder="Enter Your PAN No">
+                            Date Of Birth :
+                            <input type="date">
+                            <input type="text" placeholder="Enter Experience In Years">
+                            Gender :
+                            <select>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                            <button type="submit" class="hero-btn red-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="blog-right">
+                    <h3>Service Categories</h3>
+                <div>
+                    <span>Civil Work</span>
+                </div>
+                <div>
+                    <span>Electrician</span>
+                </div>
+                <div>
+                    <span>Plumber</span>                  
+                </div>
+                <div>
+                    <span>Carpenter</span>
+                </div>
+                <div>
+                    <span>Painter</span>
+                </div>
+                <div>
+                    <span>Iron Work</span>
+                </div>
+                <div>
+                    <span>Glazing</span>
+                </div>
+                <div>
+                    <span>Tile Work</span>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!----------Footer-------------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eos iusto adipisci quibusdam vitae! Repudiandae ullam fugit
+                    temporibus nesciunt <br>optio laboriosam delectus voluptatem aperiam 
+                    praesentium, voluptatum pariatur omnis, commodi expedita doloribus!
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made With <i class="fa fa-heart-o"></i> by Khazmuddin</p>
+        </section>
+        <!-------------------JavaScript for Toggle Menu-------------------->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right= "0";
+            }
+            function hideMenu(){
+                navLinks.style.right= "-200px";
+            }
+        </script>
+    </body>
+</html>
