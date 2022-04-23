@@ -11,6 +11,7 @@ class Userform(models.Model):
      road= models.CharField(max_length=100)
      building= models.CharField(max_length=100)
      pin= models.CharField(max_length=100)
+     kindofwork= models.CharField(max_length=100,null=True)
      content= models.TextField()
      timeStamp=models.DateTimeField(auto_now_add=True, blank=True)
 

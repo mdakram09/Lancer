@@ -29,15 +29,15 @@
     {% endfor %}
     <section class="sub-header">
         <nav>
-            <a href="index.html"><img src="{% static 'images/' %}"></a>
+            <a href="index.html"><img src="{% static 'images/logo.png' %}"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="aboutUs.html">ABOUT US</a></li>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT US</a></li>
                     <li><a href="/workforusform">WORK WITH US</a></li>
                     <li><a href="">BUY</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -129,11 +129,51 @@
                             <input for="phone" type="text" class="field-style field-split align-left" name="phone"
                                 placeholder="Phone" required />
                             <input for="state" type="text" name="state" class="field-style field-split align-right"
-                                placeholder="State" />
+                                placeholder="State" value="West Bengal" readonly />
                         </li>
                         <li>
-                            <input for="city" type="city" name="city" class="field-style field-split align-left"
-                                placeholder="City" required />
+                            <!-- <input for="city" type="city" name="city" class="field-style field-split align-left"
+                                placeholder="City" required /> -->
+
+                            <select for="city" type="city" name="city" class="field-style field-split align-left"
+                                placeholder="City" required>
+                                <option>Agarpara</option>
+                                <option>Ariadaha</option>
+                                <option>Babanpur</option>
+                                <option>Bandipur</option>
+                                <option>Baranagar/Baranagore</option>
+                                <option>Barrackpore</option>
+                                <option>Barrackpur Cantonment</option>
+                                <option>Belgharia</option>
+                                <option>Bilkanda</option>
+                                <option>Birati</option>
+                                <option>Chank Kanthalia</option>
+                                <option>Chandpur</option>
+                                <option>Dunlop</option>
+                                <option>Durganagar</option>
+                                <option>Ghola</option>
+                                <option>Ichapore</option>
+                                <option>Jafarpur</option>
+                                <option>Kamarhati</option>
+                                <option>Khardaha</option>
+                                <option>Madhyamgram</option>
+                                <option>Muragaccha</option>
+                                <option>Nawabganj</option>
+                                <option>New Barrackpore</option>
+                                <option>Nimta</option>
+                                <option>North Barrackpur</option>
+                                <option>North Dum Dum</option>
+                                <option>Palta</option>
+                                <option>Panihati</option>
+                                <option>Patulia</option>
+                                <option>Rahara</option>
+                                <option>Ruiya</option>
+                                <option>Sodepur</option>
+                                <option>Sukchar</option>
+                                <option>Titagarh</option>
+                            </select>
+
+
                             <input for="road" type="road" name="road" class="field-style field-split align-right"
                                 placeholder="Road" />
                         </li>
@@ -144,7 +184,7 @@
                                 placeholder="Pin" />
                         </li>
                         <li>
-                            <select>
+                            <select for="kindofwork" name="kindofwork">
                                 <option>Civil Work</option>
                                 <option>Electrician</option>
                                 <option>Plumber</option>
