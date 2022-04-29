@@ -45,6 +45,14 @@
                 </ul>
             </div>
         </nav>
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            <strong>Message : </strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        {% endfor %}
         <h1>Contact Us</h1>
     </section>
     <!--------------contact us----------------->
@@ -80,11 +88,14 @@
                 </div>
             </div>
             <div class="contact-col">
-                <form action="form-handler.php" method="post">
-                    <input type="text" name="name" placeholder="Enter Your Name" required>
-                    <input type="email" name="email" placeholder="Enter Email Address" required>
-                    <input type="text" name="subject" placeholder="Enter Your Phone No" required>
-                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <form method="post" action="/contact">{% csrf_token %}
+                    <input for="name" name="name" type="text" name="name" placeholder="Enter Your Name" required>
+                    <input for="email" name="email" type="email" name="email" placeholder="Enter Email Address"
+                        required>
+                    <input for="phone" name="phone" type="phone" name="subject" placeholder="Enter Your Phone No"
+                        required>
+                    <textarea for="content" name="content" rows="8" name="message" placeholder="Message"
+                        required></textarea>
                     <button type="submit" class="hero-btn red-btn">Send Message</button>
                 </form>
             </div>

@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'userform.apps.UserformConfig',
-    'workforusform.apps.WorkforusformConfig'
+    'workforusform.apps.WorkforusformConfig',
+    'contactus.apps.ContactusConfig'
 ]
 
 MIDDLEWARE = [
