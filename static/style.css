@@ -269,12 +269,16 @@ h3{
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    background-color: #222;
+    background-color: #143EFD;
+    color: white;
 }
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+    
+}
+.footer p{
     color: #fff;
 }
 .icons .fa{
@@ -316,21 +320,24 @@ h3{
 }
 /*-----------services-form------------*/
 .sub-header{
-    height: 60vh;
+    height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/home.jpg);
+    background-image: url(images/mainhero.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
     color: #fff;
 }
 .sub-header h1{
-    margin-top: 80px;
+    color: #000000;
+    margin-top: 40vh;
+    font-weight: bold;
 }
 .sub-header p{
     font-size: 15px;
-    color: #fff;
+    color: #000000;
     margin: 5px 5px 5px 5px;
+    font-weight: bold;
 }
 .services-form-col h3{
     margin-left: 0px;
